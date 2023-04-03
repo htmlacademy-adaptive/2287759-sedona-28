@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-adaptive.github.io/2287759-sedona-28/3/">
+</head>
+<body>
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img src="img/header/logo.svg" width="185" height="96" alt="Логотип.">
+    </a>
+    <nav class="main-header__nav">
+      <button class="menu-button-toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <div class="menu-wrapper">
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-list-item__link" href="index.html">Главная</a>
+            <button class="menu-list-item__menu-close-button">
+              <span class="visually-hidden">Закрыть меню.</span>
+            </button>
+          </li>
+          <li class="menu-list-item"><a class="menu-list-item__link" href="catalog.html">Фото и видео</a></li>
+          <li class="menu-list-item"><a class="menu-list-item__link" href="form.html">Форма отзыва</a></li>
+          <li class="menu-list-item"><a class="menu-list-item__link" href="https://htmlacademy.ru/">Html academy</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-catalog">
+    <header class="inner-header">
+      <h1 class="visually-hidden">Живописные виды Седоны</h1>
+      <img class="main-form__header-image" src="img/form/sedona.svg" width="229" height="39" alt="Седона.">
+    </header>
+    <section class="gallery">
+      <h2 class="gallery__title">Фото и видео</h2>
+      <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <ul class="card-list">
+        <li class="card-list-item">
+          <img class="card-list-item__image" src="img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="Дорога, уходящая в закат.">
+          <h3 class="card-list-item__title">Неродные просторы</h3>
+          <span class="card-list-item__author">Автор фото: Борис</span>
+          <div class="card-list-item__likes-statistics">
+          <button class="like-button button--liked" type="button"></button>
+          <span class="statistics">1350</span>
+        </div>
+        </li>
+        <li class="card-list-item">
+          <img class="card-list-item__image" src="img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="Цветущий кактус крупным планом.">
+          <h3 class="card-list-item__title">Местная растительность</h3>
+          <span class="card-list-item__author">Автор фото: Сергей</span>
+          <div class="card-list-item__likes-statistics">
+          <button class="like-button  button--liked" type="button"></button>
+          <span class="statistics">143</span>
+        </div>
+        </li>
+        <li class="card-list-item">
+          <img class="card-list-item__image" src="img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="Вид сврху на извилистую дорогу посреди лесов.">
+          <h3 class="card-list-item__title">Дорога на север</h3>
+          <span class="card-list-item__author">Автор фото: Петр</span>
+          <div class="card-list-item__likes-statistics">
+          <button class="like-button  button--liked" type="button"></button>
+          <span class="statistics">96</span>
+        </div>
+        </li>
+        <li class="card-list-item">
+          <img class="card-list-item__image" src="img/index-main/bridge.jpg" width="280" height="280" alt="Мост дьявола.">
+          <h3 class="card-list-item__title">Мост дьявола</h3>
+          <span class="card-list-item__author">Автор фото: Антон</span>
+          <div class="card-list-item__likes-statistics">
+          <button class="like-button  button--liked" type="button"></button>
+          <span class="statistics">254</span>
+        </div>
+        </li>
+      </ul>
+    </section>
+<section class="video">
+<h2 class="video__title">Все еще сомневаетесь?</h2>
+<p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+<video class="video__file" src="" width="280" height="177" controls="controls" poster="img/catalog/video.jpg">
+  <source src="" type='video/webm; codecs="vp8, vorbis"'>
+</video>
+</section>
+  </main>
+  <footer class="footer">
+    <a class="hashtag-visit-sedona">#visitsedona</a>
+    <ul class="socials-list">
+      <li class="socials-list__item vk-icon"><span class="visually-hidden">В контакте.</span></li>
+      <li class="socials-list__item telegram-icon"><span class="visually-hidden">Телеграм.</span></li>
+      <li class="socials-list__item youtube-icon"><span class="visually-hidden">YouTube.</span></li>
+    </ul>
+    <div class="developer">
+      <a class="developer__link" href="https://htmlacademy.ru/">Разработано</a>
+    </div>
+  </footer>
+</body>
+</html>
