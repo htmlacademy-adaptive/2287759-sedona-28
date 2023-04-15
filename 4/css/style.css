@@ -1,0 +1,457 @@
+body {
+  font-family: "PT Sans";
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+}
+.main-header {
+  width: 320px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.main-header__logo {
+  position: absolute;
+  left: 67px;
+}
+.main-header__nav {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 277px;
+  width: 23px;
+  height: 22px;
+}
+.menu-button-toggle {
+  -webkit-appearance: none;
+          appearance: none;
+  border: none;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/header/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+.menu-wrapper {
+  display: none;
+  width: 320px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.menu-list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.menu-list-item {
+  display: flex;
+  background-color: #81B3D2;
+  justify-content: center;
+}
+.menu-list-item__link {
+  font-family: "PT Sans bold";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 320px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+}
+.intro {
+  background-image: url("../img/index-main/intro.jpg");
+  background-color: #000000;
+}
+.intro__welcome {
+  padding-top: 90px;
+  padding-bottom: 85px;
+}
+.titles {
+  font-family: "PT Sans bold";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+}
+@font-face {
+  font-family: "PT Sans bold";
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+}
+.descriptions {
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+.promo {
+  width: 284px;
+  margin: 0 auto;
+}
+.promo__title {
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 35px;
+}
+.promo__description {
+  margin: 0;
+  padding-bottom: 40px;
+}
+.advantages-description {
+  background-color: #FFFFFF;
+}
+.advantages-description--blue {
+  background-color: #81B3D2;
+  color: #FFFFFF;
+}
+.advantages-description--grey {
+  background-color: #EEEEEE;
+}
+.advantages-description__title {
+  margin: 0;
+  padding-top: 54px;
+  padding-bottom: 11px;
+}
+.advantages-description__number {
+  display: block;
+  padding-bottom: 17px;
+}
+.advantages-description__info {
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width: 250px;
+}
+.recommendations-list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 46px;
+  width: 284px;
+}
+.recommendations {
+  margin: 0 auto;
+  width: 320px;
+}
+.socials-list {
+  list-style-type: none;
+  margin: 0px;
+}
+.button {
+  font-family: "PT Sans bold";
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #81B3D2;
+  width: 284px;
+  display: block;
+  padding: 16px 49px;
+  box-sizing: border-box;
+  border: none;
+}
+.developer {
+  width: 129px;
+}
+.developer__link {
+  font-family: "PT Sans";
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: left;
+  align-items: center;
+  display: flex;
+}
+.hashtag-visit-sedona {
+  font-family: "PT Sans bold";
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  width: 136px;
+}
+.recommendations-list-item {
+  text-align: start;
+}
+.recommendations-list-item__title {
+  padding-top: 33px;
+  padding-left: 47px;
+}
+.recommendations-list-item__description {
+  padding-top: 16px;
+  padding-left: 47px;
+}
+.to-book {
+  padding-top: 38px;
+  padding-bottom: 49px;
+}
+.to-book__title {
+  padding-bottom: 23px;
+}
+.to-book__description {
+  width: 262px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+.to-book__link {
+  margin: 0 auto;
+}
+.inner-header {
+  background-image: url("../img/form/inner-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #81B3D2;
+}
+.inner-header__header-image {
+  padding-top: 52px;
+  padding-bottom: 67px;
+}
+.inner-intro {
+  padding-top: 36px;
+  padding-bottom: 28px;
+}
+.inner-intro__title {
+  padding-bottom: 24px;
+}
+.inner-intro__description {
+  width: 280px;
+  margin: 0 auto;
+}
+.feedback-form {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.feedback-form__title {
+  padding-top: 24px;
+  padding-bottom: 4px;
+}
+.feedback-form__fields {
+  padding-top: 16px;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: start;
+  padding-left: 16px;
+}
+.field {
+  font-family: "PT Sans bold";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #F2F2F2;
+  border: none;
+  padding: 16px;
+  width: 280px;
+  box-sizing: border-box;
+}
+.impressions {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.impressions-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  width: 280px;
+  text-align: start;
+}
+.impressions-title {
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+.impressions-list-item {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  padding-bottom: 16px;
+  width: 280px;
+}
+.input-field {
+  padding-bottom: 34px;
+}
+.feedback {
+  margin: 0 auto;
+}
+.visited-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  width: 280px;
+  text-align: start;
+}
+.visited-list-item {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  padding-bottom: 16px;
+  width: 280px;
+}
+.emotions-feedback {
+  resize: none;
+  border: none;
+  width: 279px;
+  height: 150px;
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+  padding: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.submit {
+  width: 280px;
+  padding-top: 56px;
+  padding-bottom: 22px;
+}
+.required-fields {
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  text-align: end;
+}
+.footer {
+  width: 320px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-button {
+  font-family: "PT Sans bold";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #81B3D2;
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 63px;
+  padding-right: 63px;
+}
+.modal-button--border {
+  border: 20px solid #F2F2F2;
+}
+.modal-wrong {
+  width: 320px;
+}
+.modal-wrong__title {
+  width: 237px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 29px;
+}
+.modal-wrong__description {
+  width: 237px;
+  margin: 0 auto;
+  padding-bottom: 28px;
+}
+.modal-wrong__button {
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+.modal-shipped {
+  width: 320px;
+}
+.modal-shipped__title {
+  width: 244px;
+  margin: 0 auto;
+  padding-top: 39px;
+  padding-bottom: 29px;
+}
+.modal-shipped__description {
+  width: 244px;
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
+.modal-shipped__button {
+  margin: 0 auto;
+}
+.gallery {
+  width: 320px;
+}
+.gallery__title {
+  padding-top: 37px;
+  border-bottom: 29px;
+}
+.gallery__description {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 38px;
+}
+.card-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  text-align: start;
+}
+.card-list-item {
+  padding: 25px 20px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.card-list-item__image {
+  padding-bottom: 15px;
+}
+.card-list-item__title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.card-list-item__author {
+  display: block;
+  padding-bottom: 11px;
+}
+.video {
+  width: 320px;
+}
+.video__title {
+  padding-top: 17px;
+  padding-bottom: 33px;
+}
+.video__description {
+  width: 266px;
+  margin: 0 auto;
+  padding-bottom: 38px;
+}
+/*# sourceMappingURL=style.css.map */
