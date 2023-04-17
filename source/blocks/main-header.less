@@ -1,17 +1,29 @@
+@tablet-width:768px;
+@desktop-width:1200px;
+
 .main-header{
   width: 320px;
    background-color: #FFFFFF;
    position: relative;
-   }
+   @media(min-width:@tablet-width){width: 768px;}
+   @media(min-width:@desktop-width){width: 1200px;}
+     }
 .main-header__logo{
 position: absolute;
 left: 67px;
+@media(min-width:@tablet-width){
+  z-index: 5;
+  left: 291px;
+}
+@media(min-width:@desktop-width){
+  z-index: 5;
+  left: 547px;
+}
   }
 .main-header__nav{
   padding-top: 17px;
   padding-bottom: 17px;
   padding-left: 277px;
-
 width: 23px;
 height: 22px;
 }
