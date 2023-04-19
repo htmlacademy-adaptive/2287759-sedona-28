@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
- 
+
 <body>
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
@@ -47,7 +47,8 @@
       <h2 class="visually-hidden">Поля формы обратной связи.</h2>
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
-
+<div class="tablet-desktop-views">
+        <div class="tablet-desktop-views__name-fieldset">
           <h2 class="feedback-form__title titles">Представьтесь:</h2>
         <div class="feedback-form__fields fields">
           <label class="label" for="name">Имя*:</label>
@@ -61,7 +62,8 @@
           <label class="label" for="patronymic">Отчество:</label>
           <input class="field" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
         </div>
-
+      </div>
+      <div class="tablet-desktop-views__contacts-fieldset">
         <h2 class="feedback-form__title titles">Контактная информация:</h2>
         <div class="feedback-form__fields fields">
           <label class="label" for="tel">Контактный телефон*:</label>
@@ -76,7 +78,8 @@
           <input class="field" type="email" id="email" name="email" placeholder="Введите e-mail" required>
         </div>
        </div>
-
+      </div>
+    </div>
         <fieldset class="impressions">
           <legend class="impressions-title titles">Ваше общее впечатление:</legend>
           <ul class="impressions-list">
