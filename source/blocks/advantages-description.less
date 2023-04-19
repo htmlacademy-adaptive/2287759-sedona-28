@@ -7,9 +7,10 @@ background-color: #FFFFFF;
 &--grey{
   background-color: #EEEEEE;
 }
-
+@media(min-width:@tablet-width){width:256px;
 }
-
+ @media(min-width:@desktop-width){width:400px; }
+}
 
 .advantages-description__title
 {margin: 0;
@@ -25,4 +26,6 @@ padding-bottom: 17px;
 { margin: 0 auto;
   padding-bottom: 40px;
  width: 250px;
+ @media(min-width:@tablet-width){width: 190px;}
+ @media(min-width:@desktop-width){width: 300px;}
 }
