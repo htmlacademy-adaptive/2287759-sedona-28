@@ -2,7 +2,19 @@
   padding: 25px 20px;
   font-size: 14px;
   line-height: 21px;
-}
+  @media(min-width:@tablet-width){
+    &:first-child{width: 648px;}
+    width: 324px;
+    margin: 0;
+    padding: 0;
+  }
+  @media(min-width:@desktop-width){
+    &:first-child{width: 1200px;}
+    width: 400px;
+    margin: 0;
+    padding: 0;
+  }
+ }
 .card-list-item__image
 {
   padding-bottom: 15px;
