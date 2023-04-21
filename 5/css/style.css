@@ -26,13 +26,13 @@ body {
 @media (min-width: 768px) {
   .main-header__logo {
     z-index: 5;
-    left: 291px;
+    left: calc(50% - 92.5px);
   }
 }
 @media (min-width: 1200px) {
   .main-header__logo {
     z-index: 5;
-    left: 480px;
+    left: calc(50% - 92.5px);
   }
 }
 .main-header__nav {
@@ -273,12 +273,12 @@ body {
 }
 @media (min-width: 768px) {
   .advantages-description {
-    width: 256px;
+    width: 33.333333%;
   }
 }
 @media (min-width: 1200px) {
   .advantages-description {
-    width: 400px;
+    width: 33.333333%;
   }
 }
 .advantages-description__title {
@@ -314,7 +314,7 @@ body {
 }
 @media (min-width: 768px) {
   .recommendations-list {
-    width: 768px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -323,7 +323,7 @@ body {
 }
 @media (min-width: 1200px) {
   .recommendations-list {
-    width: 1200px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -335,12 +335,8 @@ body {
 }
 @media (min-width: 768px) {
   .recommendations {
-    width: 768px;
-  }
-}
-@media (min-width: 1200px) {
-  .recommendations {
-    width: 1200px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .socials-list {
@@ -393,13 +389,13 @@ body {
 }
 @media (min-width: 768px) {
   .recommendations-list-item {
-    width: 256px;
+    width: 33.3333%;
     text-align: center;
   }
 }
 @media (min-width: 1200px) {
   .recommendations-list-item {
-    width: 400px;
+    width: 33.3333%;
     text-align: center;
   }
 }
@@ -477,7 +473,7 @@ body {
 .inner-header {
   background-image: url("../img/form/inner-header.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   background-color: #81B3D2;
 }
 @media (min-width: 768px) {
@@ -809,22 +805,22 @@ body {
 }
 @media (min-width: 768px) {
   .card-list-item {
-    width: 324px;
+    width: 42.1875%;
     margin: 0;
     padding: 0;
   }
   .card-list-item:first-child {
-    width: 648px;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
   .card-list-item {
-    width: 400px;
+    width: 33.333333%;
     margin: 0;
     padding: 0;
   }
   .card-list-item:first-child {
-    width: 1200px;
+    width: 100%;
   }
 }
 .card-list-item__image {
