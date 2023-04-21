@@ -10,6 +10,8 @@
 </head>
 
 <body>
+  <div class="page-content">
+
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img src="img/header/logo.svg" width="185" height="96" alt="Логотип.">
@@ -47,7 +49,8 @@
       <h2 class="visually-hidden">Поля формы обратной связи.</h2>
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
-
+<div class="tablet-desktop-views">
+        <div class="tablet-desktop-views__name-fieldset">
           <h2 class="feedback-form__title titles">Представьтесь:</h2>
         <div class="feedback-form__fields fields">
           <label class="label" for="name">Имя*:</label>
@@ -61,7 +64,8 @@
           <label class="label" for="patronymic">Отчество:</label>
           <input class="field" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
         </div>
-
+      </div>
+      <div class="tablet-desktop-views__contacts-fieldset">
         <h2 class="feedback-form__title titles">Контактная информация:</h2>
         <div class="feedback-form__fields fields">
           <label class="label" for="tel">Контактный телефон*:</label>
@@ -76,7 +80,8 @@
           <input class="field" type="email" id="email" name="email" placeholder="Введите e-mail" required>
         </div>
        </div>
-
+      </div>
+    </div>
         <fieldset class="impressions">
           <legend class="impressions-title titles">Ваше общее впечатление:</legend>
           <ul class="impressions-list">
@@ -159,7 +164,7 @@
   <p class="modal-shipped__description descriptions">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте</p>
   <button class="modal-shipped__button modal-button modal-button--border" type="button">Закрыть окно</button>
 </div>
-
+</div>
 </body>
 
 </html>

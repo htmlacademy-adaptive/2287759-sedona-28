@@ -2,6 +2,14 @@
 display: flex;
 background-color: #81B3D2;
 justify-content: center;
+@media(min-width:@tablet-width)
+{width:153px;
+  background-color: #ffffff;
+}
+@media(min-width:@desktop-width)
+{width:240px;
+  background-color: #ffffff;
+}
 }
 .menu-list-item__link{
   font-family: "PT Sans bold";
@@ -15,4 +23,19 @@ width: 320px;
 padding-top: 12px;
 padding-bottom: 12px;
 box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+@media(min-width:@tablet-width){
+  color:#000000;
+}
+@media(min-width:@desktop-width){
+  color:#000000;
+}
+}
+.menu-list-item__menu-close-button{
+
+  @media(min-width:@tablet-width){
+    display: none;
+}
+@media(min-width:@desktop-width){
+  display: none;
+}
 }
