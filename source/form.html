@@ -12,29 +12,38 @@
 <body>
   <div class="page-content">
 
-  <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img src="img/header/logo.svg" width="185" height="96" alt="Логотип.">
-    </a>
-    <nav class="main-header__nav">
-      <button class="menu-button-toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
-      <div class="menu-wrapper">
-        <ul class="menu-list">
-          <li class="menu-list-item">
-            <a class="menu-list-item__link" href="index.html">Главная</a>
-            <button class="menu-list-item__menu-close-button">
-              <span class="visually-hidden">Закрыть меню.</span>
-            </button>
-          </li>
-          <li class="menu-list-item"><a class="menu-list-item__link" href="catalog.html">Фото и видео</a></li>
-          <li class="menu-list-item"><a class="menu-list-item__link" href="form.html">Форма отзыва</a></li>
-          <li class="menu-list-item"><a class="menu-list-item__link" href="https://htmlacademy.ru/">Html academy</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/header/logo.svg" width="185" height="96" alt="Логотип.">
+      </a>
+      <nav class="main-header__nav">
+
+        <button class="menu-button" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+          <svg width="23" height="22" viewBox="0 0 23 22"  xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0V4H22.9V0Z" fill="currentColor"/>
+            <path d="M22.9 9H0V13H22.9V9Z" fill="currentColor"/>
+            <path d="M22.9 18H0V22H22.9V18Z" fill="currentColor"/>
+            </svg>
+               </button>
+        <div class="menu-wrapper">
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a class="menu-list-item__link" href="index.html">Главная</a>
+              <button class="menu-list-item__menu-close-button">
+                <span class="visually-hidden">Закрыть меню.</span>
+                <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="currentColor"/>
+                  </svg>
+              </button>
+            </li>
+            <li class="menu-list-item"><a class="menu-list-item__link" href="catalog.html">Фото и видео</a></li>
+            <li class="menu-list-item"><a class="menu-list-item__link menu-list-item__link--current" href="form.html">Форма отзыва</a></li>
+            <li class="menu-list-item"><a class="menu-list-item__link" href="https://htmlacademy.ru/">Html academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   <main class="main-form">
     <header class="inner-header">
       <h1 class="visually-hidden">Форма обратной связи.</h1>
