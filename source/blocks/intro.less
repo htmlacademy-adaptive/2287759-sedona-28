@@ -7,7 +7,14 @@
   background-image: url("../img/index-main/intro-tab-desk.jpg");}
   @media(min-width:@desktop-width){width: 1200px; height: 518px;
     background-image: url("../img/index-main/intro-tab-desk.jpg");}
-
+    &::after{
+      display: block;
+      content: "";
+      height: 57px;
+      background-image: url("../img/index-main/intro-triangle.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 }
 .intro__welcome{
   padding-top: 90px;
