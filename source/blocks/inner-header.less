@@ -1,13 +1,30 @@
 .inner-header{
+  margin: 0 auto;
 background-image: url("../img/form/inner-header.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-color: #81B3D2;
 @media(min-width:@tablet-width){
   background-image: url("../img/index-main/intro-tab-desk.jpg");
-
  }
-
+ &::after{
+  margin: 0 auto;
+  display: block;
+  content: "";
+  height: 57px;
+  background-image: url("../img/index-main/intro-triangle.svg");
+  background-repeat: no-repeat;
+   @media(min-width:321px){display: none;}
+     @media(min-width:@tablet-width){
+         display: block;
+      background-image: url("../img/index-main/tablet-decor.svg");
+      background-position: center;
+             }
+   @media(min-width:@desktop-width){
+    background-image: url("../img/index-main/desktop-decor.svg");
+    background-position: center;
+   }
+}
 }
 .inner-header__header-image
 {

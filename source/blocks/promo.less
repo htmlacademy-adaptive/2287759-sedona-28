@@ -1,8 +1,19 @@
 .promo{width: 255px;
 margin: 0 auto;
+position: relative;
+&::after{
+  display: block;
+  width: 320px;
+  content: "";
+  height: 37px;
+  background-image: url("../img/index-main/white-decor.svg");
+  background-repeat: no-repeat;
+ position: absolute;
+ left: -33px;
+ @media(min-width:321px){display: none;}
+}
 @media(min-width:@tablet-width){width: 520px;}
 }
-
 .promo__title{
   margin: 0;
   padding-top: 32px;
