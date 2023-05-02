@@ -1,19 +1,34 @@
 .recommendations-list-item
 {text-align: start;
+  &--house-icon{background-image: url("../img/index-main/house.svg");
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  @media(min-width:@tablet-width){background-position: top;}
+}
+&--burger-icon{background-image: url("../img/index-main/burger.svg");
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  @media(min-width:@tablet-width){background-position: top;}
+}
+&--present-icon{background-image: url("../img/index-main/present.svg");
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  @media(min-width:@tablet-width){background-position: top;}
+}
   @media(min-width:@tablet-width){width: 33.3333%;
-    text-align: center;
- }
+    text-align: center;}
   @media(min-width:@desktop-width){width:33.3333%;  text-align: center;}
 }
 .recommendations-list-item__title
 {padding-top: 33px;
   padding-left: 47px;
-  @media(min-width:@tablet-width){width: 177px; margin: 0 auto; padding: 0;}
-  @media(min-width:@desktop-width){width: 285px;  margin: 0 auto; padding: 0;}
+
+  @media(min-width:@tablet-width){width: 177px; margin: 0 auto; padding: 0; padding-top: 158px; }
+  @media(min-width:@desktop-width){width: 285px;  margin: 0 auto; padding: 0; padding-top: 169px;}
 }
 .recommendations-list-item__description
 {padding-top: 16px;
    padding-left: 47px;
-   @media(min-width:@tablet-width){width: 177px; margin: 0 auto; padding:0; padding-top: 29px;}
-   @media(min-width:@desktop-width){width: 285px;  margin: 0 auto; padding:0;  padding-top: 29px;}
+   @media(min-width:@tablet-width){width: 177px; margin: 0 auto; padding:0; padding-top: 29px; padding-bottom: 60px;}
+   @media(min-width:@desktop-width){width: 285px;  margin: 0 auto; padding:0;  padding-top: 29px; padding-bottom: 69px;}
 }

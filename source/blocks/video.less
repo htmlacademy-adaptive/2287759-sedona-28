@@ -1,6 +1,13 @@
 .video
 {
-  width: 320px;
+ min-width: 320px;
+ @media(min-width:@tablet-width)
+ { width: 84.375%;
+margin: 0 auto;}
+@media(min-width:@desktop-width){
+  width: calc(800%/12);
+  margin: 0 auto;
+}
 }
 .video__title
 {
@@ -12,4 +19,5 @@
   width: 266px;
   margin: 0 auto;
   padding-bottom: 38px;
+  @media(min-width:@tablet-width){width: 445px;}
 }
