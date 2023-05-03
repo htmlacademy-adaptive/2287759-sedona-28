@@ -1,5 +1,26 @@
 .socials-list
 {
   list-style-type: none;
-  margin: 0px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  width: 156px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.socials-list__item{
+width: 48px;
+height: 48px;
+background-color: #81B3D2;
+&:hover{
+  background-color:#669EC0;
+  }
+  &:active{
+    background-color:#5496BD;
+          }
+ &:active svg{
+            opacity: 30%;;
+                  }
 }

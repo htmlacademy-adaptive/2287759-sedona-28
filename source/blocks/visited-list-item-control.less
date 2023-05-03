@@ -1,0 +1,28 @@
+.visited-list-item-control
+{
+  display: flex;
+  align-items: center;
+}
+.visited-list-item-control__control-input
+{
+  &[type="checkbox"]:checked + .visited-list-item-control__checkbox-button{
+    background-image: url("../img/form/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:active + .visited-list-item-control__checkbox-button{
+    background-color: #D5D5D5;
+  }
+}
+.visited-list-item-control__checkbox-button
+{
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  margin-right: 16px;
+  &:hover{
+    background-color: #E5E5E5;
+  }
+}

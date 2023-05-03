@@ -2,5 +2,24 @@
 {  list-style-type: none;
   margin: 0px;
   padding: 0px;
- }
+  width: 100%;
 
+  @media(min-width:@tablet-width){
+display: grid;
+grid-template-columns: repeat(5, 153px);
+&::after{
+  content:"";
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+ }
+ @media(min-width:@desktop-width){
+  display: grid;
+grid-template-columns: repeat(5, 240px);
+&::after{
+  content:"";
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+ }
+}

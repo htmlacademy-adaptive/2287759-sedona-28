@@ -1,14 +1,23 @@
 .feedback-form
 {
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
 
 }
 .feedback-form__title
 {padding-top: 24px;
   padding-bottom: 4px;
-
+  @media(min-width:@tablet-width){
+    padding: 0;
+  }
 }
 .feedback-form__fields
-{padding-top: 16px;
-}
+{ margin: 0 auto;
+  padding-top: 16px;
+  width: 280px;
+  @media(min-width:@tablet-width){
+    width: 295px;
+  }
+  @media(min-width:@desktop-width){
+    width: 430px;
+  }
+ }

@@ -1,0 +1,28 @@
+.impressions-list-item-control
+{
+  display: flex;
+  align-items: center;
+}
+.impressions-list-item-control__control-input
+{
+&[type="radio"]:checked + .impressions-list-item-control__radio-button{
+background-color: rgba(51, 51, 51, 1);
+border: 15px solid #F2F2F2;
+}
+&:active + .impressions-list-item-control__radio-button {
+  background-color: #D5D5D5;
+}
+}
+.impressions-list-item-control__radio-button
+{ display: block;
+  width: 46px;
+  height: 46px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 50%;
+  margin-right: 16px;
+  box-sizing: border-box;
+  &:hover{
+    background-color: #E5E5E5;
+  }
+
+}

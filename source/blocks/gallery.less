@@ -1,5 +1,5 @@
 .gallery{
-  width: 320px;
+  width: 100%;
 }
 .gallery__title
 {
@@ -7,7 +7,11 @@
   border-bottom: 29px;
 }
 .gallery__description
-{width: 280px;
+{width: 87.5%;
   margin: 0 auto;
   padding-bottom: 38px;
+  @media(min-width:@tablet-width){
+    width: 56%;
+    max-width:430px;
+  }
 }
