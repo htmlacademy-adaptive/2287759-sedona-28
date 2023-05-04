@@ -52,11 +52,15 @@
       <ul class="card-list">
         <li class="card-list-item">
           <picture>
+            <source media="(min-width:1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x">
             <source media="(min-width:768px)" srcset="img/catalog/photo-1-tablet.jpg 1x">
             <img class="card-list-item__image" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile2x.jpg 2x" alt="Дорога, уходящая в закат.">
         </picture>
+        <div class="photo-info-stat">
+        <div>
           <h3 class="card-list-item__title">Неродные просторы</h3>
           <span class="card-list-item__author">Автор фото: Борис</span>
+        </div>
           <div class="card-list-item__likes-statistics">
           <button class="like-button like-button--liked" type="button">
             <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
@@ -65,14 +69,19 @@
           </button>
           <span class="statistics">1350</span>
         </div>
+      </div>
         </li>
         <li class="card-list-item">
           <picture>
+            <source media="(min-width:1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x">
             <source media="(min-width:768px)" srcset="img/catalog/photo-2-tablet.jpg 1x">
           <img class="card-list-item__image" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile2x.jpg 2x" alt="Цветущий кактус крупным планом.">
         </picture>
+        <div class="photo-info-stat">
+        <div>
           <h3 class="card-list-item__title">Местная растительность</h3>
           <span class="card-list-item__author">Автор фото: Сергей</span>
+        </div>
           <div class="card-list-item__likes-statistics">
           <button class="like-button like-button--liked" type="button">
             <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
@@ -81,14 +90,19 @@
           </button>
           <span class="statistics">143</span>
         </div>
+      </div>
         </li>
         <li class="card-list-item">
           <picture>
+            <source media="(min-width:1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x">
           <source media="(min-width:768px)" srcset="img/catalog/photo-3-tablet.jpg 1x">
           <img class="card-list-item__image" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile2x.jpg 2x"  alt="Вид сврху на извилистую дорогу посреди лесов.">
         </picture>
+       <div class="photo-info-stat photo-info-stat--grey">
+        <div>
           <h3 class="card-list-item__title">Дорога на север</h3>
           <span class="card-list-item__author">Автор фото: Петр</span>
+        </div>
           <div class="card-list-item__likes-statistics">
           <button class="like-button  like-button--liked" type="button">
             <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
@@ -97,14 +111,19 @@
           </button>
           <span class="statistics">96</span>
         </div>
+      </div>
         </li>
         <li class="card-list-item">
           <picture>
+            <source media="(min-width:1200px)" srcset="img/catalog/photo-4-desktop.jpg 1x">
             <source media="(min-width:768px)" srcset="img/catalog/photo-4-tablet.jpg 1x">
           <img class="card-list-item__image" src="img/index-main/bridge.jpg" srcset="img/catalog/photo-4-mobile2x.jpg 2x"  alt="Мост дьявола.">
         </picture>
+        <div class="photo-info-stat">
+        <div>
           <h3 class="card-list-item__title">Мост дьявола</h3>
           <span class="card-list-item__author">Автор фото: Антон</span>
+        </div>
           <div class="card-list-item__likes-statistics">
           <button class="like-button  like-button--liked" type="button">
             <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
@@ -113,6 +132,7 @@
           </button>
           <span class="statistics">254</span>
         </div>
+      </div>
         </li>
       </ul>
     </section>
@@ -120,7 +140,11 @@
 <h2 class="video__title titles">Все еще сомневаетесь?</h2>
 <p class="video__description descriptions">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
 <a href="#">
-  <img src="img/catalog/video.jpg" width="280" height="177" alt="Видео.">
+  <picture>
+    <source  media="(min-width:1200px)" srcset="img/catalog/video-desktop.jpg">
+        <source  media="(min-width:768px)" srcset="img/catalog/video-tablet.jpg">
+  <img src="img/catalog/video.jpg" srcset="img/catalog/video-mobile2x.jpg 2x" alt="Видео.">
+</picture>
 </a>
 
 </section>
