@@ -58,7 +58,12 @@
           <span class="advantages-description__number">№1</span>
           <p class="advantages-description__info descriptions">Седона не аттракцион для туристов, там течет своя жизнь.</p>
         </div>
-        <img class="advantages-image" src="img/index-main/city.jpg" width="320" height="260" alt="Терраса на фоне гор.">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/index-main/city-desktop.jpg 1x">
+          <source media="(min-width:768px)" srcset="img/index-main/city-tablet.jpg 1x">
+          <source media="(max-width:767px)" srcset="img/index-main/city.jpg 1x">
+        <img class="advantages-image" src="img/index-main/city.jpg" srcset="img/index-main/city2x.jpeg 2x" alt="Терраса на фоне гор.">
+      </picture>
       </div>
       <section class="recommendations">
         <ul class="recommendations-list">
@@ -77,13 +82,18 @@
           </li>
         </ul>
       </section>
-      <div class="description-image">
+      <div class="description-image description-image--img-position">
         <div class="advantages-description advantages-description--blue">
           <h2 class="advantages-description__title titles">Там есть мост дьявола</h2>
           <span class="advantages-description__number">№2</span>
           <p class="advantages-description__info descriptions">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="advantages-image" src="img/index-main/bridge.jpg" width="320" height="260" alt="Мост Дьявола.">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/index-main/bridge-desktop.jpg 1x">
+          <source media="(min-width:768px)" srcset="img/index-main/bridge-tablet.jpg 1x">
+          <source media="(max-width:767px)" srcset="img/index-main/bridge.jpg 1x">
+        <img class="advantages-image" src="img/index-main/bridge.jpg" srcset="img/index-main/bridge2x.jpeg 2x" alt="Мост Дьявола.">
+      </picture>
       </div>
       <div class="advantages-list">
       <div class="advantages-description advantages-description--grey">
@@ -111,6 +121,12 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Расположение на карте.</h2>
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/index-main/map-desktop.jpg 1x">
+        <source media="(min-width:768px)" srcset="img/index-main/map-tablet.jpg 1x">
+        <source media="(max-width:767px)" srcset="img/index-main/map.jpg 1x">
+      <img class="advantages-image" src="img/index-main/map.jpg" srcset="img/index-main/map2x 2x" alt="Карта.">
+    </picture>
          </section>
   </main>
     <footer class="footer">
