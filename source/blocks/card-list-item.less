@@ -2,6 +2,9 @@
   padding: 25px 20px;
   font-size: 14px;
   line-height: 21px;
+
+
+
   @media(min-width:@tablet-width){
     &:first-child{width:100%}
     width: 50%;
@@ -13,11 +16,19 @@
     width:calc(100%/3);
     margin: 0;
     padding: 0;
+
+    position: relative;
   }
- }
+  }
+
 .card-list-item__image
-{
+{vertical-align: middle;
+  width: 100%;
   padding-bottom: 15px;
+  @media(min-width:@tablet-width){
+    padding-bottom: 0px;
+  }
+
 }
 .card-list-item__title
 {

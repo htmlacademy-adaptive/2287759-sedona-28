@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   </head>
 <body class="page__body">
   <div class="page-content">
@@ -58,7 +62,11 @@
           <span class="advantages-description__number">№1</span>
           <p class="advantages-description__info descriptions">Седона не аттракцион для туристов, там течет своя жизнь.</p>
         </div>
-        <img class="advantages-image" src="img/index-main/city.jpg" width="320" height="260" alt="Терраса на фоне гор.">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/index-main/city-desktop.jpg 1x, img/index-main/city-desktop2x.jpg 2x">
+          <source media="(min-width:768px)" srcset="img/index-main/city-tablet.jpg 1x, img/index-main/city-tablet2x.jpg 2x">
+          <img class="advantages-image" src="img/index-main/city.jpg" srcset="img/index-main/city2x.jpg 2x" alt="Терраса на фоне гор.">
+      </picture>
       </div>
       <section class="recommendations">
         <ul class="recommendations-list">
@@ -77,13 +85,17 @@
           </li>
         </ul>
       </section>
-      <div class="description-image">
+      <div class="description-image description-image--img-position">
         <div class="advantages-description advantages-description--blue">
           <h2 class="advantages-description__title titles">Там есть мост дьявола</h2>
           <span class="advantages-description__number">№2</span>
           <p class="advantages-description__info descriptions">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="advantages-image" src="img/index-main/bridge.jpg" width="320" height="260" alt="Мост Дьявола.">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/index-main/bridge-desktop.jpg 1x, img/index-main/bridge-desktop2x.jpg 2x">
+          <source media="(min-width:768px)" srcset="img/index-main/bridge-tablet.jpg 1x, img/index-main/bridge-tablet2x.jpg 2x">
+          <img class="advantages-image" src="img/index-main/bridge.jpg" srcset="img/index-main/bridge2x.jpg 2x" alt="Мост Дьявола.">
+      </picture>
       </div>
       <div class="advantages-list">
       <div class="advantages-description advantages-description--grey">
@@ -111,6 +123,13 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Расположение на карте.</h2>
+
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/index-main/map-desktop.jpg 1x, img/index-main/map-desktop2x.jpg 2x">
+        <source media="(min-width:768px)" srcset="img/index-main/map-tablet.jpg 1x, img/index-main/map-tablet2x.jpg 2x">
+             <img class="advantages-image" src="img/index-main/map.jpg" srcset="img/index-main/map2x.jpg 2x" alt="Карта.">
+    </picture>
+
          </section>
   </main>
     <footer class="footer">
