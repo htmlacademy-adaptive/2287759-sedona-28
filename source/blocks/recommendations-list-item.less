@@ -1,19 +1,40 @@
 .recommendations-list-item
 {text-align: start;
-  &--house-icon{background-image: url("../img/index-main/house.svg");
+  &--house-icon{
+  background-image: url("../img/index-main/house.svg");
   background-repeat: no-repeat;
   background-position-y: 20px;
-  @media(min-width:@tablet-width){background-position: top;}
+  @media(min-width:@tablet-width){
+    background-image: url("../img/index-main/house-tablet.svg");
+    background-position:50% 60px;
+  }
+  @media(min-width:@desktop-width){
+    background-image: url("../img/index-main/house-desktop.svg");
+    background-position:50% 69px;
+  }
 }
+
 &--burger-icon{background-image: url("../img/index-main/burger.svg");
   background-repeat: no-repeat;
   background-position-y: 20px;
-  @media(min-width:@tablet-width){background-position: top;}
+  @media(min-width:@tablet-width){
+    background-image: url("../img/index-main/burger-tablet.svg");
+    background-position:50% 62px;
+  }
+  @media(min-width:@desktop-width){
+    background-image: url("../img/index-main/burger-desktop.svg");
+    background-position:50% 72px;
+  }
 }
 &--present-icon{background-image: url("../img/index-main/present.svg");
   background-repeat: no-repeat;
   background-position-y: 20px;
-  @media(min-width:@tablet-width){background-position: top;}
+  @media(min-width:@tablet-width){
+    background-image: url("../img/index-main/present-tablet.svg");
+    background-position:50% 64px;}
+    @media(min-width:@desktop-width){
+      background-image: url("../img/index-main/present-desktop.svg");
+      background-position:50% 69px;}
 }
   @media(min-width:@tablet-width){width: 33.3333%;
     text-align: center;}
