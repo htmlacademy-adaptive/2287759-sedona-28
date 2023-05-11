@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+    <base href="https://htmlacademy-adaptive.github.io/2287759-sedona-28/9/">
+</head>
+<body class="page__body">
+
+
+   <div class="page-content">
+  <header class="main-header">
+    <a class="main-header__logo" href="#">
+      <img src="img/header/logo.svg" width="185" height="96" alt="Логотип.">
+    </a>
+    <nav class="main-header__nav">
+
+      <button class="menu-button" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+        <svg width="23" height="22">
+          <use href="img/sprite.svg#open-menu"></use>
+          </svg>
+             </button>
+      <div class="menu-wrapper">
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-list-item__link menu-list-item__link--current menu-list-item__link--mobile" href="">Главная</a>
+            <button class="menu-list-item__menu-close-button">
+              <span class="visually-hidden">Закрыть меню.</span>
+              <svg width="23" height="23">
+                <use href="img/sprite.svg#close-menu"></use>
+                </svg>
+            </button>
+          </li>
+          <li class="menu-list-item"><a class="menu-list-item__link" href="catalog.html">Фото и видео</a></li>
+          <li class="menu-list-item"><a class="menu-list-item__link" href="form.html">Форма отзыва</a></li>
+          <li class="menu-list-item"><a class="menu-list-item__link" href="https://htmlacademy.ru/">Html academy</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
+    <section class="intro">
+      <h2 class="visually-hidden">Введение.</h2>
+      <img class="intro__welcome" src="img/index-main/intro.svg" width="282" height="214"
+        alt="Добро пожаловать в великолепную Седону. Потому что Гранд-каньон отстой.">
+    </section>
+    <section class="promo">
+      <h2 class="promo__title titles">Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="promo__description descriptions">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </section>
+    <section class="advantages">
+      <div class="description-image">
+        <div class="advantages-description advantages-description--blue">
+          <h2 class="advantages-description__title titles">Настоящий городок</h2>
+          <span class="advantages-description__number">№1</span>
+          <p class="advantages-description__info descriptions">Седона не аттракцион для туристов, там течет своя жизнь.</p>
+        </div>
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/index-main/city-desktop.jpg 1x, img/index-main/city-desktop2x.jpg 2x">
+          <source media="(min-width:768px)" type="image/webp" srcset="img/index-main/city-tablet.webp 1x, img/index-main/city-tablet2x.jpg 2x">
+          <img class="advantages-image" src="img/index-main/city.jpg" srcset="img/index-main/city2x.jpg 2x" alt="Терраса на фоне гор.">
+      </picture>
+      </div>
+      <section class="recommendations">
+        <ul class="recommendations-list">
+          <li class="recommendations-list-item recommendations-list-item--house-icon">
+            <h2 class="recommendations-list-item__title titles">Жилье</h2>
+            <p class="recommendations-list-item__description descriptions">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="recommendations-list-item recommendations-list-item--burger-icon">
+            <h2 class="recommendations-list-item__title titles">Еда</h2>
+            <p class="recommendations-list-item__description descriptions">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            </p>
+          </li>
+          <li class="recommendations-list-item recommendations-list-item--present-icon">
+            <h2 class="recommendations-list-item__title titles">Сувениры</h2>
+            <p class="recommendations-list-item__description descriptions">Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <div class="description-image description-image--img-position">
+        <div class="advantages-description advantages-description--blue">
+          <h2 class="advantages-description__title titles">Там есть мост дьявола</h2>
+          <span class="advantages-description__number">№2</span>
+          <p class="advantages-description__info descriptions">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/index-main/bridge-desktop.jpg 1x, img/index-main/bridge-desktop2x.jpg 2x">
+          <source media="(min-width:768px)"  type="image/webp" srcset="img/index-main/bridge-tablet.webp 1x, img/index-main/bridge-tablet2x.jpg 2x">
+          <img class="advantages-image" src="img/index-main/bridge.jpg" srcset="img/index-main/bridge2x.jpg 2x" alt="Мост Дьявола.">
+      </picture>
+      </div>
+      <div class="advantages-list">
+      <div class="advantages-description advantages-description--grey">
+        <h2 class="advantages-description__title titles">Небольшая площадь</h2>
+        <span class="advantages-description__number">№3</span>
+        <p class="advantages-description__info descriptions">Все интересные места находятся очень близко</p>
+      </div>
+      <div class="advantages-description advantages-description--grey">
+        <h2 class="advantages-description__title titles">Красивая дорога</h2>
+        <span class="advantages-description__number">№4</span>
+        <p class="advantages-description__info descriptions">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+      <div class="advantages-description advantages-description--grey">
+        <h2 class="advantages-description__title titles">Мало туристов</h2>
+        <span class="advantages-description__number">№5</span>
+        <p class="advantages-description__info descriptions">Большинство едет в гранд каньон и толпится там</p>
+      </div>
+    </div>
+    </section>
+    <section class="to-book">
+      <h2 class="to-book__title titles">Заинтересовались?</h2>
+      <p class="to-book__description descriptions">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+        в Седоне</p>
+      <a class="to-book__link button" href="#">Найти гостиницу</a>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Расположение на карте.</h2>
+
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/index-main/map-desktop.jpg 1x, img/index-main/map-desktop2x.jpg 2x">
+        <source media="(min-width:768px)" srcset="img/index-main/map-tablet.jpg 1x, img/index-main/map-tablet2x.jpg 2x">
+             <img class="advantages-image" src="img/index-main/map.jpg" srcset="img/index-main/map2x.jpg 2x" alt="Карта.">
+    </picture>
+
+         </section>
+  </main>
+    <footer class="footer">
+      <a class="hashtag-visit-sedona" href="#">#visitsedona</a>
+      <ul class="socials-list">
+        <li class="socials-list__item">
+          <a class="socials-icon" href="#"><span class="visually-hidden">В контакте.</span>
+            <svg width="24" height="24">
+               <use href="img/sprite.svg#vk-icon"></use>
+              </svg></a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-icon" href="#"><span class="visually-hidden">Телеграм.</span>
+            <svg width="24" height="24">
+              <use href="img/sprite.svg#telegram-icon"></use>
+              </svg>
+              </a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-icon" href="#"><span class="visually-hidden">YouTube.</span>
+            <svg width="24" height="24">
+              <use href="img/sprite.svg#youtube-icon"></use>
+              </svg></a>
+        </li>
+      </ul>
+<div class="developer">
+        <a class="developer__link" href="https://htmlacademy.ru/">Разработано
+        <svg >
+          <use href="img/sprite.svg#developer"></use>
+        </svg></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
