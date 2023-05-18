@@ -10,7 +10,7 @@ import rename from 'gulp-rename';
 import squoosh from 'gulp-squoosh';
 import svgo from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
-
+import { deleteAsync } from 'del';
 
 // Styles
 
@@ -74,14 +74,16 @@ gulp.src(['source/fonts/*.{woff2,woff}','source/*.ico', 'source/*.webmanifest'],
 done ();
 }
 
-/*//clean
- const clean = () => {
-  return del('build');
-}*/
+//clean
+ const clean  = () => {
+  return deleteAsync('build');
+}
+
+
 
 // Server
 
-const server = (done) => {
+export const server = (done) => {
   browser.init({
     server: {
       baseDir: 'build'
@@ -90,6 +92,12 @@ const server = (done) => {
     notify: false,
     ui: false,
   });
+  done();
+}
+
+//reload
+ const reload  = (done) => {
+  browser.reload();
   done();
 }
 
@@ -102,33 +110,17 @@ const watcher = () => {
 
 
  export default gulp.series(
-  html, styles, server, watcher
-);
-
-/*export const build = gulp.series(
-  clean,
-  copy,
-  optimizeImages
+  clean, copy, copyImages,
   gulp.parallel(
-    styles,
-    html,
-    svg,
-    sprite,
-    createWebp
-  )
-);*/
-
-/*export default gulp.series(
-  clean,
-  copy,
-  copyImages
-  gulp.parallel(
-    styles,
-    html,
-    svg,
-    sprite,
-    createWebp
+    styles, html, svg, sprite, createWebp,
   ),
-  gulp.series(server,
-    watcher
-    )));*/
+ gulp.series(server, watcher
+));
+
+//build
+export const build =  gulp.series(
+  clean, copy, optimizeImages,
+  gulp.parallel(
+    styles, html, svg, sprite, createWebp
+  )
+);
