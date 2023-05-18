@@ -38,7 +38,7 @@ import { deleteAsync } from 'del';
   .pipe(gulp.dest('build/img'));
 }
 
- const copyImages  = () => {
+ export const copyImages  = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'));
     }
@@ -65,7 +65,7 @@ import { deleteAsync } from 'del';
 }
 
 //fonts,favicon
- const copy  = (done) => {
+export const copy  = (done) => {
 gulp.src(['source/fonts/*.{woff2,woff}','source/*.ico', 'source/*.webmanifest'],
 {
   base: 'source'
