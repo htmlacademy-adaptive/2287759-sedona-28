@@ -18,13 +18,41 @@
 
 .advantages-description__title
 {margin: 0 auto;
-  padding-top: 24px;
+  padding-top: 22px;
    padding-bottom: 11px;
   &--pp-city{
     padding-top: 70px;
+    @media(min-width:@tablet-width){
+      padding-top: 50px;
+    }
   }
   &--pp-bridge{
     padding-top: 37px;
+    @media(min-width:@tablet-width){
+      padding-top: 54px;
+    }
+  }
+  &--pp-tab3{
+    @media(min-width:@tablet-width){
+      padding-top: 40px;
+    }
+
+  }
+  &--pp-mob4{
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    @media(min-width:@tablet-width){
+      padding-top: 40px;
+    }
+  }
+  &--pp-mob5{
+    padding: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    @media(min-width:@tablet-width){
+      padding-top: 40px;
+    }
   }
   @media(min-width:@tablet-width){width: 150px; padding-bottom: 15px;
     font-family: "PT Sans bold";
@@ -42,9 +70,25 @@ padding-bottom: 17px;
 { margin: 0 auto;
   padding-bottom: 40px;
  width: 284px;
+ & br {display: none;}
+&--pp-mob3{
+  width: 268px;
 
+}
+&--pp-mob4{
+  width: 237px;
+  @media(min-width:@tablet-width){
+    & br{ display: inline;}
+  }
+}
+&--pp-mob5{
+  width: 254px;
+}
  @media(min-width:@tablet-width){width: 190px; padding-bottom: 30px;
   }
- @media(min-width:@desktop-width){width: 300px; padding-bottom: 50px;}
-
+ @media(min-width:@desktop-width){
+  width: 300px; padding-bottom: 50px;}
+  &--pp{
+    @media(min-width:@desktop-width){width: 222px;}
+  }
 }
