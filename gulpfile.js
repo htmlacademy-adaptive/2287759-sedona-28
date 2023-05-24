@@ -113,7 +113,7 @@ const watcher = () => {
   clean, copy, copyImages,
   gulp.parallel(
     styles, html, svg, sprite,
-   // createWebp
+   createWebp
   ),
  gulp.series(server, watcher
 ));
