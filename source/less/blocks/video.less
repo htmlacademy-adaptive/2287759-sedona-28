@@ -11,13 +11,19 @@ margin: 0 auto;}
 }
 .video__title
 {
-
   padding-bottom: 28px;
+  @media(min-width:@tablet-width){
+    font-size: 30px;
+    line-height: 26px;
+    padding-top: 40px;
+  }
 }
 .video__description
 {
   width: 266px;
   margin: 0 auto;
   padding-bottom: 38px;
-  @media(min-width:@tablet-width){width: 445px;}
+  @media(min-width:@tablet-width){width: 445px;
+    padding-top: 3px;
+  padding-bottom: 90px;}
 }

@@ -2,9 +2,6 @@
   padding: 25px 20px;
   font-size: 14px;
   line-height: 21px;
-
-
-
   @media(min-width:@tablet-width){
     &:first-child{width:100%}
     width: 50%;
@@ -37,9 +34,23 @@
   text-transform: uppercase;
 font-size: 14px;
 line-height: 21px;
+& br{display:none;}
+@media(min-width:@tablet-width){
+  & br{display: inline;}
+}
 }
 .card-list-item__author
 {
   display: block;
   padding-bottom: 11px;
+}
+.card-list-item__likes-statistics
+{
+  @media(min-width:@tablet-width){
+display: flex;
+padding-bottom: 15px;
+&--pp-tab{
+  padding-bottom: 0px;
+}
+}
 }
