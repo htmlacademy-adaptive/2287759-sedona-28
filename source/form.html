@@ -31,11 +31,11 @@
             <path d="M22.9 18H0V22H22.9V18Z" fill="currentColor"/>
             </svg>
                </button>
-        <div class="menu-wrapper">
+        <div class="menu-wrapper menu-wrapper--menu-opened menu-wrapper--menu-closed menu-wrapper--menu-stream">
           <ul class="menu-list">
             <li class="menu-list-item">
               <a class="menu-list-item__link" href="index.html">Главная</a>
-              <button class="menu-list-item__menu-close-button">
+              <button class="menu-list-item__menu-close-button visually-hidden">
                 <span class="visually-hidden">Закрыть меню.</span>
                 <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="currentColor"/>
@@ -52,7 +52,7 @@
   <main class="main-form">
     <header class="inner-header">
       <h1 class="visually-hidden">Форма обратной связи.</h1>
-      <img class="inner-header__header-image" src="img/form/sedona.svg" width="229" height="39" alt="Седона.">
+      <img class="inner-header__header-image" src="img/form/sedona-tab.svg" width="229" height="39" alt="Седона.">
     </header>
     <section class="inner-intro">
       <h2 class="inner-intro__title titles">Оставьте свой отзыв</h2>
@@ -68,19 +68,19 @@
           <h2 class="feedback-form__title titles">Представьтесь:</h2>
         <div class="feedback-form__fields fields">
           <label class="label" for="name">Имя*:</label>
-          <input class="field" type="text" id="name" name="name" placeholder="Пётр" required>
+          <input class="field" type="text" id="name" name="name" value="Пётр" required>
         </div>
         <div class="feedback-form__fields fields">
           <label class="label" for="surname">Фамилия*:</label>
-          <input class="field" type="text" id="surname" name="surname" placeholder="Пустота" required>
+          <input class="field" type="text" id="surname" name="surname" value="Пустота" required>
         </div>
         <div class="feedback-form__fields fields">
           <label class="label" for="patronymic">Отчество:</label>
-          <input class="field" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+          <input class="field" type="text" id="patronymic" name="patronymic" value="Викторович">
         </div>
       </div>
       <div class="tablet-desktop-views__contacts-fieldset">
-        <h2 class="feedback-form__title titles">Контактная информация:</h2>
+        <h2 class="feedback-form__title feedback-form__title--pp titles">Контактная информация:</h2>
         <div class="feedback-form__fields fields">
           <label class="label" for="tel">Контактный телефон*:</label>
           <div class="input-field">
@@ -88,7 +88,7 @@
         </div>
       </div>
 
-      <div class="feedback-form__fields fields">
+      <div class="feedback-form__fields feedback-form__fields--pp fields">
           <label class="label" for="email">Электронная почта*:</label>
           <div class="input-field ">
           <input class="field field--icon-email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
@@ -124,18 +124,18 @@
         </fieldset>
 
         <fieldset class="impressions">
-          <legend class="impressions-title titles">Посещенные достопримечательности:</legend>
+          <legend class="impressions-title impressions-title--pp impressions-title--pp-tab titles">Посещенные достопримечательности:</legend>
          <ul class="visited-list">
           <li class="visited-list-item">
             <label class="visited-list-item-control">
               <input class="visited-list-item-control__control-input visually-hidden"  type="checkbox" name="devils-bridge">
               <span class="visited-list-item-control__checkbox-button"></span>
-              Мост дьявола
+              Мост Дьявола
             </label>
           </li>
           <li class="visited-list-item">
             <label class="visited-list-item-control">
-              <input class="visited-list-item-control__control-input visually-hidden" type="checkbox" name="bell-mountain">  <span class="visited-list-item-control__checkbox-button"></span>Гора-колокол
+              <input class="visited-list-item-control__control-input visually-hidden" type="checkbox" name="bell-mountain">  <span class="visited-list-item-control__checkbox-button"></span>Гора-Колокол
             </label>
           </li>
           <li class="visited-list-item">
@@ -152,8 +152,8 @@
         </fieldset>
 
         <fieldset class="impressions">
-          <legend class="impressions-title titles">Опишите свои эмоции:</legend>
-          <textarea class="emotions-feedback" name="feedback" placeholder="Опишите подробно все свои восторги "></textarea>
+          <legend class="impressions-title impressions-title--pp impressions-title--pp-tab titles">Опишите свои эмоции:</legend>
+          <textarea class="emotions-feedback" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
         <div class="submit">

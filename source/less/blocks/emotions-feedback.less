@@ -1,0 +1,23 @@
+.emotions-feedback{
+   resize: none;
+  border: none;
+  min-width: 279px;
+  min-height: 150px;
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+  padding: 16px;
+  &::placeholder{
+    font-family: "PT Sans", "Arial", sans-serif;
+   font-size: 18px;
+  line-height: 26px;
+   font-weight: 700;
+   color: rgba(0, 0, 0, 0.3) ;
+  }
+  @media(min-width:@tablet-width){
+    width: 84.375%;
+
+  }
+  @media(min-width:@desktop-width){
+    width: 64%;
+  }
+}

@@ -1,0 +1,82 @@
+.recommendations-list-item
+{text-align: start;
+  &--house-icon{
+  background-image: url("../img/index-main/house.svg");
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  @media(min-width:@tablet-width){
+    background-image: url("../img/index-main/house-tablet.svg");
+    background-position:50% 56px;
+    padding-top: 156px;
+  }
+  @media(min-width:@desktop-width){
+    background-image: url("../img/index-main/house-desktop.svg");
+    background-position:50% 65px;
+    padding-top: 6px;
+  }
+}
+
+&--burger-icon{background-image: url("../img/index-main/burger.svg");
+  background-repeat: no-repeat;
+  background-position-y: 15px;
+  margin-top: 8px;
+  @media(min-width:@tablet-width){
+    background-image: url("../img/index-main/burger-tablet.svg");
+    background-position:50% 50px;
+    padding-top: 146px;
+  }
+  @media(min-width:@desktop-width){
+    background-image: url("../img/index-main/burger-desktop.svg");
+    background-position:50% 60px;
+    padding-top: 0px;
+  }
+}
+&--present-icon{background-image: url("../img/index-main/present.svg");
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  margin-top: 7px;
+  @media(min-width:@tablet-width){
+    background-image: url("../img/index-main/present-tablet.svg");
+    background-position:50% 50px;
+  padding-top: 144px;}
+    @media(min-width:@desktop-width){
+      background-image: url("../img/index-main/present-desktop.svg");
+      background-position:50% 58px;
+      padding-top: 0px;
+    }
+
+}
+  @media(min-width:@tablet-width){width: 33.3333%;
+    text-align: center;}
+  @media(min-width:@desktop-width){width:33.3333%;  text-align: center;}
+}
+.recommendations-list-item__title
+{padding-top: 27px;
+  padding-left: 47px;
+
+  @media(min-width:@tablet-width){width: 177px; margin: 0 auto; padding: 0;
+   font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;}
+  @media(min-width:@desktop-width){width: 285px;  margin: 0 auto; padding: 0; padding-top: 160px;
+  &--pp-desktop{
+    padding-top: 155px;
+  }}
+}
+.recommendations-list-item__description
+{padding-top: 16px;
+   padding-left: 47px;
+& br{display: none;}
+   @media(min-width:@tablet-width){width: 177px; margin: 0 auto; padding:0; padding-top: 23px; padding-bottom: 60px;
+    & br {display: inline;}}
+   @media(min-width:@desktop-width){width: 285px;  margin: 0 auto; padding:0;  padding-top: 23px; padding-bottom: 69px;
+    & br {display: inline;}}
+   &--pp{
+    @media(min-width:@tablet-width){
+      width: 155px;
+    }
+    @media(min-width:@desktop-width){
+      width: 300px;
+         }
+   }
+  }
