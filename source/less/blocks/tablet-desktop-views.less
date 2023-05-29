@@ -16,11 +16,33 @@
 }
 }
 .tablet-desktop-views__name-fieldset{
+  &::after{
+    display: block;
+    margin: 0 auto;
+    margin-top: 39px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(229, 229, 229, 1);
+    @media(min-width:@tablet-width){display: none;}
+   }
   @media(min-width:@tablet-width){width:calc(295%/6.48);}
   @media(min-width:@desktop-width){width:calc(430%/9.6)}
 
 }
 .tablet-desktop-views__contacts-fieldset{
-  @media(min-width:@tablet-width){width: 295px;}
+  margin-top: -40px;
+  &::after{
+    display: block;
+    margin: 0 auto;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(229, 229, 229, 1);
+    @media(min-width:@tablet-width){display: none;}
+   }
+  @media(min-width:@tablet-width){
+    margin-top: 0px;
+       width: 295px;}
   @media(min-width:@desktop-width){width: 430px;}
 }
