@@ -1,0 +1,41 @@
+.field
+{
+  font-family: "PT Sans bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #F2F2F2;
+
+ border: none;
+
+  margin: 0 auto;
+  padding: 16px;
+  width: 280px;
+   box-sizing: border-box;
+  &:hover{
+    background-color: #E5E5E5;
+  }
+  &:active{
+    background-color: #FFFFFF;
+
+
+
+  }
+  &--icon-tel{background-image: url("../img/form/phone-icon.svg");
+    background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 58px;
+}
+  &--icon-email{ background-image: url("../img/form/mail-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 58px;}
+
+
+ @media(min-width:@tablet-width){
+      width: 295px;
+    }
+    @media(min-width:@desktop-width){
+      width: 430px;
+    }
+  }

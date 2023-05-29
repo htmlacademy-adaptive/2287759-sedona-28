@@ -13,8 +13,6 @@
   <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
 <body class="page__body">
-
-
    <div class="page-content">
   <header class="main-header">
     <a class="main-header__logo" href="#">
@@ -28,11 +26,11 @@
           <use href="img/sprite.svg#icon-menu"></use>
           </svg>
              </button>
-      <div class="menu-wrapper">
+      <div class="menu-wrapper menu-wrapper--menu-opened menu-wrapper--menu-closed menu-wrapper--menu-stream">
         <ul class="menu-list">
           <li class="menu-list-item">
             <a class="menu-list-item__link menu-list-item__link--current menu-list-item__link--mobile" href="">Главная</a>
-            <button class="menu-list-item__menu-close-button">
+            <button class="menu-list-item__menu-close-button visually-hidden">
               <span class="visually-hidden">Закрыть меню.</span>
               <svg width="23" height="23">
                 <use href="img/sprite.svg#icon-cross"></use>
@@ -41,7 +39,7 @@
           </li>
           <li class="menu-list-item"><a class="menu-list-item__link" href="catalog.html">Фото и видео</a></li>
           <li class="menu-list-item"><a class="menu-list-item__link" href="form.html">Форма отзыва</a></li>
-          <li class="menu-list-item"><a class="menu-list-item__link" href="https://htmlacademy.ru/">Html academy</a></li>
+          <li class="menu-list-item"><a class="menu-list-item__link menu-list-item__link--pp" href="https://htmlacademy.ru/">Html academy</a></li>
         </ul>
       </div>
     </nav>
@@ -54,7 +52,7 @@
         alt="Добро пожаловать в великолепную Седону. Потому что Гранд-каньон отстой.">
     </section>
     <section class="promo">
-      <h2 class="promo__title titles">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <h2 class="promo__title  titles">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="promo__description descriptions">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <section class="advantages">
@@ -62,7 +60,7 @@
         <div class="advantages-description advantages-description--blue">
           <h2 class="advantages-description__title advantages-description__title--pp-city titles">Настоящий городок</h2>
           <span class="advantages-description__number">— №1 —</span>
-          <p class="advantages-description__info descriptions">Седона не аттракцион для туристов, там течет своя жизнь.</p>
+          <p class="advantages-description__info advantages-description__info--pp1 descriptions">Седона не аттракцион для туристов, <br>там течет своя жизнь.</p>
         </div>
         <picture>
           <source media="(min-width:1200px)" srcset="img/index-main/city-desktop.jpg 1x, img/index-main/city-desktop2x.jpg 2x">
@@ -77,13 +75,13 @@
             <p class="recommendations-list-item__description descriptions">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="recommendations-list-item recommendations-list-item--burger-icon">
-            <h2 class="recommendations-list-item__title titles">Еда</h2>
+            <h2 class="recommendations-list-item__title recommendations-list-item__title--pp-desktop titles">Еда</h2>
             <p class="recommendations-list-item__description recommendations-list-item__description--pp descriptions">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="recommendations-list-item recommendations-list-item--present-icon">
             <h2 class="recommendations-list-item__title titles">Сувениры</h2>
-            <p class="recommendations-list-item__description descriptions">Не только китайского,<br> но и местного производства!</p>
+            <p class="recommendations-list-item__description descriptions">Не только китайского, <br> но и местного производства!</p>
           </li>
         </ul>
       </section>
@@ -131,7 +129,6 @@
         <source media="(min-width:768px)" srcset="img/index-main/map-tablet.jpg 1x, img/index-main/map-tablet2x.jpg 2x">
              <img class="advantages-image" src="img/index-main/map.jpg" srcset="img/index-main/map2x.jpg 2x" alt="Карта.">
     </picture>
-
          </section>
   </main>
     <footer class="footer">
