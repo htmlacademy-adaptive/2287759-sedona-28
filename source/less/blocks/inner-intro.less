@@ -1,8 +1,18 @@
 .inner-intro{
  padding-top: 36px;
 padding-bottom: 28px;
-
+&::after{
+  display: block;
+  margin: 0 auto;
+  margin-top: 28px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(229, 229, 229, 1);
+  @media(min-width:@tablet-width){display: none;}
+ }
 }
+
 .inner-intro__title
 {
 padding-bottom: 24px;

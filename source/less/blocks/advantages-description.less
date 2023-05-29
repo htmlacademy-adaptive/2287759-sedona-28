@@ -2,12 +2,14 @@
 
  background-color: #FFFFFF;
 
+
 &--blue{
   background-color: #81B3D2;
   color:#FFFFFF;
 }
 &--grey{
   background-color: #EEEEEE;
+
 }
 
 
@@ -43,21 +45,21 @@
 
   }
   &--pp-mob4{
-    padding: 0;
-    padding-top: 10px;
-    padding-bottom: 11px;
+       padding: 0;
+       margin-top: -15px;
+       padding-bottom: 11px;
     @media(min-width:@tablet-width){
       padding-top: 40px;
     }
   }
   &--pp-mob5{
     padding: 0;
-    padding-top: 11px;
+    margin-top: -15px;
     padding-bottom: 11px;
     @media(min-width:@tablet-width){
       padding-top: 40px;
     }
-  }
+  } 
   @media(min-width:@tablet-width){width: 150px; padding-bottom: 15px;
   font-size: 21px;
   line-height: 26px;
@@ -84,9 +86,30 @@ padding-bottom: 17px;
  }
 &--pp-mob3{
   width: 268px;
+  &::after{
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+       content: "";
+    min-width: 284px;
+    height: 1px;
+    background-color: rgba(214, 214, 214, 1);
+    @media(min-width:@tablet-width){display: none;}
+   }
   }
 &--pp-mob4{
   width: 237px;
+ padding-top: 0;
+  &::after{
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+    content: "";
+    min-width: 284px;
+    height: 1px;
+    background-color: rgba(214, 214, 214, 1);
+    @media(min-width:@tablet-width){display: none;}
+   }
   @media(min-width:@tablet-width){
     & br{ display: inline;}
   }

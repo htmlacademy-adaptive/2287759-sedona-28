@@ -3,4 +3,19 @@
   border: none;
  margin: 0;
  padding: 0;
+ &::after{
+  display: block;
+  margin: 0 auto;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(229, 229, 229, 1);
+   @media(min-width:@tablet-width){display: none;}
+ }
+ &--no-after{
+  &::after{
+  display: none;
+    }}
 }
